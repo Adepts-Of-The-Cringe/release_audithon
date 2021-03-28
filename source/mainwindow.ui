@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1390</width>
+    <height>444</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>&quot;ВиГоД&quot;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="ExternalTab">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <attribute name="title">
+        <string>Внешний долг</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <layout class="QHBoxLayout" name="ExternalTopLayout">
+          <item>
+           <widget class="QRadioButton" name="ExternalVolumeRB">
+            <property name="text">
+             <string>Объем и структура</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="ExternalRepaymentRB">
+            <property name="text">
+             <string>График погашения</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="ExternalMainLayout">
+          <item>
+           <widget class="QGroupBox" name="ExternalVolumeGrBx">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <item>
+              <layout class="QHBoxLayout" name="ExternalVolumeTopLayout">
+               <item>
+                <widget class="QLabel" name="ExternalVolumeFromLabel">
+                 <property name="text">
+                  <string>Период с:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="ExternalVolumeFromMonthCmBx">
+                 <property name="currentText">
+                  <string/>
+                 </property>
+                 <property name="maxVisibleItems">
+                  <number>12</number>
+                 </property>
+                 <property name="placeholderText">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="ExternalVolumeFromYearCmBx"/>
+               </item>
+               <item>
+                <widget class="QLabel" name="ExternalVolumeToLabel">
+                 <property name="text">
+                  <string>по:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="ExternalVolumeToMonthCmBx">
+                 <property name="currentText">
+                  <string/>
+                 </property>
+                 <property name="maxVisibleItems">
+                  <number>12</number>
+                 </property>
+                 <property name="placeholderText">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="ExternalVolumeToYearCmBx"/>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="ExternalVolumeMainLayout">
+               <item>
+                <widget class="QGroupBox" name="ExternalVolumeChartGrBx">
+                 <property name="title">
+                  <string>Объем</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_2">
+                  <item row="0" column="0">
+                   <widget class="QChartView" name="ExternalVolumeChartView"/>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="ExternalVolumeInfoGrBx">
+                 <property name="title">
+                  <string>Структура</string>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_7"/>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="ExternalRepaymentGrBx">
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QChartView" name="ExternalRepaymentChartView"/>
+             </item>
+             <item>
+              <widget class="QCalendarWidget" name="ExternalRepaymentCalendar"/>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="InternalTab">
+       <attribute name="title">
+        <string>Внутренний долг</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <layout class="QHBoxLayout" name="InternalTopLayout">
+          <item>
+           <widget class="QRadioButton" name="InternalVolumeRB">
+            <property name="text">
+             <string>Объем и структура</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="InternalRepaymentRB">
+            <property name="text">
+             <string>График погашения</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="InternalMainLayout">
+          <item>
+           <widget class="QGroupBox" name="InternalVolumeGrBx">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_13">
+             <item>
+              <layout class="QHBoxLayout" name="InternalVolumeTopLayout">
+               <item>
+                <widget class="QLabel" name="InternalVolumeFromLabel">
+                 <property name="text">
+                  <string>Период с:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="InternalVolumeFromMonthCmBx">
+                 <property name="currentText">
+                  <string/>
+                 </property>
+                 <property name="maxVisibleItems">
+                  <number>12</number>
+                 </property>
+                 <property name="placeholderText">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="InternalVolumeFromYearCmBx"/>
+               </item>
+               <item>
+                <widget class="QLabel" name="InternalVolumeToLabel">
+                 <property name="text">
+                  <string>по:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="InternalVolumeToMonthCmBx">
+                 <property name="currentText">
+                  <string/>
+                 </property>
+                 <property name="maxVisibleItems">
+                  <number>12</number>
+                 </property>
+                 <property name="placeholderText">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="InternalVolumeToYearCmBx"/>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="InternalVolumeMainLayout">
+               <item>
+                <widget class="QGroupBox" name="InternalVolumeChartGrBx">
+                 <property name="title">
+                  <string>Объем</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_5">
+                  <item row="0" column="0">
+                   <widget class="QChartView" name="InternalVolumeChartView"/>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="InternalVolumeInfoGrBx">
+                 <property name="title">
+                  <string>Структура</string>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_14"/>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="InternalRepaymentGrBx">
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <widget class="QChartView" name="InternalRepaymentChartView"/>
+             </item>
+             <item>
+              <widget class="QCalendarWidget" name="InternalRepaymentCalendar"/>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1390</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QGraphicsView</extends>
+   <header>QtCharts</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
